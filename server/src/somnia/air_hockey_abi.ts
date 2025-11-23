@@ -1,4 +1,4 @@
-export const air_hockey_abi = [
+export const air_hockey_abi: any = [
   {
     inputs: [],
     stateMutability: "payable",
