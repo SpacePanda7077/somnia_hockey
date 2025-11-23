@@ -94,6 +94,8 @@ Smart contract system managing entry fees and rewards
 SDS-powered match feed + leaderboard
 
 On-chain match lifecycle from creation → gameplay → payout
+
+
 🔧 Setup & Installation
 
 Follow these steps to run Somnia Hockey locally.
