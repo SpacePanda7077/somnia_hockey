@@ -1,0 +1,204 @@
+.custom-room-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 8px;
+    width: 70%;
+}
+.custom-modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 8px;
+    width: 50vw;
+    height: auto;
+}
+.custom-modal-container input {
+    width: 60%;
+    height: 30px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.custom-modal-container .modal-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.custom-modal-container button {
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+}
+.waiting-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 8px;
+}
+.menu-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(15, 15, 15, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    width: 50vw;
+    height: auto;
+}
+.menu-container button {
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: rgba(0, 255, 255, 0);
+    border: solid;
+    color: rgb(255, 217, 0);
+    border-color: antiquewhite;
+}
+
+.room-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.room-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    font-size: large;
+}
+.leaderboard-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    font-size: large;
+}
+
+.color-picker-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    width: 100%;
+    height: 20%;
+}
+
+.timer-container {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+.score-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.score-container .player1 {
+    background-color: rgb(255, 0, 0);
+    padding: 10px 40px;
+}
+.score-container .player2 {
+    background-color: rgb(47, 0, 255);
+    padding: 10px 40px;
+}
+
+.end-menu-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.47);
+    padding: 40px;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(17, 255, 0);
+}
+.end-menu-container .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.end-menu-container .button-container button {
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    border: solid;
+    border-color: aliceblue;
+}
+.end-menu-container .button-container .claim-button {
+    background-color: rgb(13, 255, 0);
+}
+.end-menu-container .button-container .main-menu-button {
+    background-color: rgb(255, 0, 0);
+}
+

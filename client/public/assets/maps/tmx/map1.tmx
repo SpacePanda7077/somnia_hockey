@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="120" height="60" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="35">
+ <editorsettings>
+  <export target="../json/map1.tmj" format="json"/>
+ </editorsettings>
+ <objectgroup id="2" name="border">
+  <object id="34" x="320" y="320">
+   <polygon points="0,0 960,0 1280,192 1920,192 2240,0 3200,0 3200,1280 2240,1280 1920,1088 1280,1088 960,1280 0,1280"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="middle_line">
+  <object id="31" x="1920" y="512">
+   <point/>
+  </object>
+  <object id="32" x="1920" y="1408">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="collision">
+  <object id="25" x="192" y="96">
+   <polygon points="0,0 3584,0 3584,1504 3328,1504 3328,224 2368,224 2048,416 1729,416 1408,416 1088,224 0,224"/>
+  </object>
+  <object id="26" x="192" y="320">
+   <polygon points="0,0 128,0 128,1280 1088,1280 1408,1088 2048,1088 2368,1280 3584,1280 3584,1504 0,1536"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="goal">
+  <object id="22" x="304.6" y="648" width="62.8" height="628"/>
+  <object id="27" x="3472.6" y="646" width="62.8" height="628"/>
+ </objectgroup>
+</map>
