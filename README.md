@@ -1,53 +1,140 @@
-🏒 Somnia Hockey
-On-Chain Multiplayer Arcade Game
-Somnia Hockey is a real-time, competitive arcade game that runs entirely on the blockchain. It uses Somnia Data Streams (SDS) to broadcast live match events and ensure trustless, verifiable state synchronization between players.
-Experience fast-paced gameplay with the security of on-chain verification. Players can stake tokens, compete for rewards, and engage in a transparent, multiplayer eSports experience.
-✨ Features
-Trustless Matchmaking and Payouts: Create matches with a staked entry fee and join lobbies with transparent, automated reward distribution managed by a Somnia smart contract.
-On-Chain Verifiability: Key match milestones and results are streamed to the blockchain via SDS, creating a tamper-proof, verifiable record of all gameplay.
-Real-Time Hybrid Gameplay: Combines traditional game networking (WebSockets) for smooth performance with SDS for critical on-chain updates, offering the best of both worlds.
-Decentralized Leaderboards: SDS powers an on-chain leaderboard, ensuring verifiable scores and rankings.
-Hackathon Prototype: A fully functional demo showcasing the integration of gaming logic, a Colyseus backend, and Somnia Data Streams.
-🧠 Why this Matters
-Somnia Hockey is a blueprint for the future of blockchain-native eSports, proving that live data streams can serve as composable game infrastructure. It demonstrates:
-Real-time multiplayer coordination on-chain.
-Trustless matchmaking and automated payouts.
-The use of SDS for verifiable game state without sacrificing performance.
-🏆 Hackathon Submission
-This project was built for the Somnia hackathon and represents a fully functional proof-of-concept for:
-A playable multiplayer arcade game.
-A backend server managing lobbies and WebSocket connections.
-A smart contract system for entry fees and rewards.
-An SDS-powered match feed and leaderboard.
-An end-to-end on-chain match lifecycle.
-⚙️ Setup and Installation
-Follow these steps to run Somnia Hockey locally.
+# 🏒 Somnia Hockey
 
+### **On-Chain Multiplayer Arcade Game Powered by Somnia Data Streams**
+
+**Somnia Hockey** is a real-time, competitive arcade game that runs
+directly on the blockchain.\
+Using **Somnia Data Streams (SDS)**, the game broadcasts live match
+events on-chain, enabling **trustless, verifiable, tamper-proof state
+synchronization** between players.
+
+Experience fast-paced gameplay enhanced by the transparency, fairness,
+and automation of blockchain technology --- including **staked
+matches**, **automated payouts**, and **verifiable leaderboards**.
+
+------------------------------------------------------------------------
+
+## ✨ Features
+
+### 🔒 Trustless Matchmaking & Payouts
+
+Create or join matches with a staked entry fee.\
+A Somnia smart contract handles **automated, verifiable reward
+distribution** with no middlemen.
+
+### 🧾 On-Chain Verifiability
+
+Key match milestones and results are streamed on-chain via **Somnia Data
+Streams**, creating an **auditable and tamper-proof gameplay history**.
+
+### ⚡ Hybrid Real-Time Gameplay
+
+Smooth WebSocket-based multiplayer networking combined with SDS for
+critical on-chain updates --- delivering both **performance and
+verifiability**.
+
+### 🏅 Decentralized Leaderboards
+
+Scores and rankings are powered by SDS, ensuring **transparent,
+censorship-resistant leaderboards**.
+
+### 🧩 Hackathon Prototype
+
+A fully working demo integrating: - The Somnia Data Streams protocol\
+- A Colyseus multiplayer backend\
+- A smart-contract-based match lifecycle\
+- A playable frontend arcade game
+
+------------------------------------------------------------------------
+
+## 🧠 Why This Matters
+
+**Somnia Hockey demonstrates the future of blockchain-native eSports.**\
+It shows how real-time data streams can act as composable game
+infrastructure --- enabling:
+
+-   Real-time, on-chain multiplayer coordination\
+-   Trustless matchmaking with automated payouts\
+-   Verifiable game states without sacrificing gameplay experience\
+-   Blockchain-backed transparency for competitive gaming
+
+This project serves as a working blueprint for developers building
+decentralized games or interactive dApps powered by live on-chain data.
+
+------------------------------------------------------------------------
+
+## 🏆 Hackathon Submission
+
+This prototype was built for the **Somnia Hackathon**, delivering:
+
+-   A playable multiplayer arcade experience\
+-   A Colyseus-powered real-time backend\
+-   Smart contracts for entry fees and rewards\
+-   SDS-driven match events and leaderboards\
+-   A complete on-chain match lifecycle
+
+------------------------------------------------------------------------
+
+## ⚙️ Setup & Installation
+
+Follow these steps to run **Somnia Hockey** locally:
+
+### 1. Clone the Repository
+
+``` bash
 git clone https://github.com/SpacePanda7077/somnia_hockey
-cd somnia-hockey
-The repository contains two main folders: server/ (the Colyseus backend) and client/ (the game frontend).
+cd somnia_hockey
+```
 
-Install dependencies
-Navigate into each folder and install the required Node modules.
-Backend (Server)
+The project contains two folders:
 
+    server/  → Colyseus backend
+    client/  → Frontend game client
+
+------------------------------------------------------------------------
+
+### 2. Install Dependencies
+
+#### Backend (Server)
+
+``` bash
 cd server
 npm install
+```
 
-Frontend (Client)
+#### Frontend (Client)
 
+``` bash
 cd ../client
-yarn install
+npm install
+```
 
-Start the server
-From the server/ directory, launch the backend.
+------------------------------------------------------------------------
 
+### 3. Start the Backend Server
+
+From the `server/` directory:
+
+``` bash
 npm start
+```
 
-Start the client
-From the client/ directory, start the development server.
+------------------------------------------------------------------------
 
+### 4. Start the Frontend Client
+
+From the `client/` directory:
+
+``` bash
 npm run dev
+```
 
-Open the game
-Once the client is running, navigate to the URL printed in your terminal (e.g., http://localhost:8080) to play the game.
+------------------------------------------------------------------------
+
+### 5. Launch the Game
+
+Once the client is running, open the URL printed in the terminal (e.g.):
+
+    http://localhost:8080
+
+You're ready to play Somnia Hockey locally!
