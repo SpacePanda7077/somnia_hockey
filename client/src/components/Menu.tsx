@@ -52,7 +52,6 @@ function Menu() {
                 openModal={create_match_modal_open}
                 setOpen={set_open_create_match_modal}
             />
-            <Waiting_Modal />
             <Custom_Rooms
                 openModal={find_match_modal_open}
                 setOpen={set_open_find_match_modal}

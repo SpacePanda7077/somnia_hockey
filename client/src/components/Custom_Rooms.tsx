@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./css/component.css";
 import { EventBus } from "../game/EventBus";
 import { formatEther } from "viem";
+import Waiting_Modal from "./Waiting_Modal";
 
 interface OpenModalProp {
     openModal: boolean;
@@ -12,6 +13,15 @@ function Custom_Rooms({ openModal, setOpen }: OpenModalProp) {
     const [available_rooms, set_available_room] = useState<
         { roomId: string; isOpened: boolean; entryFee: bigint }[]
     >([]);
+    const [isWaitModalOpen, setWaitModalOpen] = useState(false);
+    const [createRoomText, setCreateRoomText] = useState("");
+
+    const setWaitOpen = (open: boolean) => {
+        setWaitModalOpen(open);
+    };
+    const setText = (message: string) => {
+        setCreateRoomText(message);
+    };
 
     useEffect(() => {
         EventBus.on(
@@ -25,6 +35,8 @@ function Custom_Rooms({ openModal, setOpen }: OpenModalProp) {
     }, []);
     const handleclick = (id: string) => {
         EventBus.emit("join_custom_room", id);
+        setWaitOpen(true);
+        setText("Joining Room !!!");
     };
     return (
         <>
@@ -67,6 +79,12 @@ function Custom_Rooms({ openModal, setOpen }: OpenModalProp) {
                     </button>
                 </div>
             )}
+            <Waiting_Modal
+                isOpen={isWaitModalOpen}
+                setOpen={setWaitOpen}
+                text={createRoomText}
+                setText={setText}
+            />
         </>
     );
 }

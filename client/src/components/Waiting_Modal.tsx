@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
 import { EventBus } from "../game/EventBus";
-
-function Waiting_Modal() {
-    const [roomCreated, setRoomCreated] = useState(false);
-    useEffect(() => {
-        EventBus.on("room_created", () => {
-            setRoomCreated(true);
-        });
-    }, []);
+interface OpenModalProp {
+    isOpen: boolean;
+    setOpen: (open: boolean) => void;
+    text: string;
+    setText: (message: string) => void;
+}
+function Waiting_Modal({ isOpen, setOpen, text, setText }: OpenModalProp) {
     return (
         <>
-            {roomCreated && (
+            {isOpen && (
                 <div className="waiting-modal">
-                    <h1>Waiting for other player</h1>
+                    <h1>{text}</h1>
                     <button
                         onClick={() => {
-                            setRoomCreated(false);
+                            setOpen(false);
                         }}
                     >
                         Cancel
