@@ -146,8 +146,18 @@ export class Lobby_Room extends Room<Lobby_Room_State> {
     }, 30000);
   }
 
-  onJoin(client: Client, options: any) {
+  async onJoin(client: Client, options: any) {
     console.log(client.sessionId, "joined lobby room !! ");
+    try {
+      const leaderboard = await this.getLeaderBoard();
+      if (leaderboard) {
+        // console.log(rooms);
+        console.log(leaderboard);
+        this.broadcast("leaderboard", leaderboard);
+      }
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   async onLeave(client: Client, consented: boolean) {
