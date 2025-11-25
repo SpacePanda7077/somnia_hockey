@@ -66,7 +66,7 @@ export class Game_Room extends Room<Game_Room_State> {
     this.gameEnded = false;
     this.createPuck();
     this.seconds = 30;
-    this.minute = 0;
+    this.minute = 2;
 
     this.clock.setInterval(async () => {
       this.seconds--;
@@ -76,7 +76,7 @@ export class Game_Room extends Room<Game_Room_State> {
       } else if (this.seconds <= 0 && this.minute <= 0) {
         const players = Object.values(this.players);
         if (players[0].score === players[1].score) {
-          this.minute = 1;
+          this.minute = 0;
           this.seconds = 59;
         } else {
           this.seconds = 0;
