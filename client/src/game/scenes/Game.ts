@@ -74,28 +74,36 @@ export class Game extends Scene {
                         );
                         this.frontend_players[id].sync();
                     } else {
-                        const pos = {
-                            x: Phaser.Math.Linear(
-                                this.frontend_players[
-                                    id
-                                ].rigid_body.translation().x,
-                                backend_player.position.x,
-                                0.5
-                            ),
-                            y: Phaser.Math.Linear(
-                                this.frontend_players[
-                                    id
-                                ].rigid_body.translation().y,
-                                backend_player.position.y,
-                                0.5
-                            ),
-                        };
+                        if (id === current_room.sessionId) {
+                            this.frontend_players[id].rigid_body.setTranslation(
+                                backend_player.position,
+                                true
+                            );
+                            this.frontend_players[id].sync();
+                        } else {
+                            const pos = {
+                                x: Phaser.Math.Linear(
+                                    this.frontend_players[
+                                        id
+                                    ].rigid_body.translation().x,
+                                    backend_player.position.x,
+                                    0.5
+                                ),
+                                y: Phaser.Math.Linear(
+                                    this.frontend_players[
+                                        id
+                                    ].rigid_body.translation().y,
+                                    backend_player.position.y,
+                                    0.5
+                                ),
+                            };
 
-                        this.frontend_players[id].rigid_body.setTranslation(
-                            pos,
-                            true
-                        );
-                        this.frontend_players[id].sync();
+                            this.frontend_players[id].rigid_body.setTranslation(
+                                pos,
+                                true
+                            );
+                            this.frontend_players[id].sync();
+                        }
                     }
                 }
             }
