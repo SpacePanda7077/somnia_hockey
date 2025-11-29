@@ -12,7 +12,7 @@ Experience fast-paced gameplay enhanced by the transparency, fairness,
 and automation of blockchain technology --- including **staked
 matches**, **automated payouts**, and **verifiable leaderboards**.
 
-------------------------------------------------------------------------
+---
 
 ## ✨ Features
 
@@ -41,11 +41,12 @@ censorship-resistant leaderboards**.
 ### 🧩 Hackathon Prototype
 
 A fully working demo integrating: - The Somnia Data Streams protocol\
+
 - A Colyseus multiplayer backend\
 - A smart-contract-based match lifecycle\
 - A playable frontend arcade game
 
-------------------------------------------------------------------------
+---
 
 ## 🧠 Why This Matters
 
@@ -53,27 +54,27 @@ A fully working demo integrating: - The Somnia Data Streams protocol\
 It shows how real-time data streams can act as composable game
 infrastructure --- enabling:
 
--   Real-time, on-chain multiplayer coordination\
--   Trustless matchmaking with automated payouts\
--   Verifiable game states without sacrificing gameplay experience\
--   Blockchain-backed transparency for competitive gaming
+- Real-time, on-chain multiplayer coordination\
+- Trustless matchmaking with automated payouts\
+- Verifiable game states without sacrificing gameplay experience\
+- Blockchain-backed transparency for competitive gaming
 
 This project serves as a working blueprint for developers building
 decentralized games or interactive dApps powered by live on-chain data.
 
-------------------------------------------------------------------------
+---
 
 ## 🏆 Hackathon Submission
 
 This prototype was built for the **Somnia Hackathon**, delivering:
 
--   A playable multiplayer arcade experience\
--   A Colyseus-powered real-time backend\
--   Smart contracts for entry fees and rewards\
--   SDS-driven match events and leaderboards\
--   A complete on-chain match lifecycle
+- A playable multiplayer arcade experience\
+- A Colyseus-powered real-time backend\
+- Smart contracts for entry fees and rewards\
+- SDS-driven match events and leaderboards\
+- A complete on-chain match lifecycle
 
-------------------------------------------------------------------------
+---
 
 ## ⚙️ Setup & Installation
 
@@ -81,7 +82,7 @@ Follow these steps to run **Somnia Hockey** locally:
 
 ### 1. Clone the Repository
 
-``` bash
+```bash
 git clone https://github.com/SpacePanda7077/somnia_hockey
 cd somnia_hockey
 ```
@@ -91,45 +92,51 @@ The project contains two folders:
     server/  → Colyseus backend
     client/  → Frontend game client
 
-------------------------------------------------------------------------
+---
 
 ### 2. Install Dependencies
 
 #### Backend (Server)
 
-``` bash
+```bash
 cd server
 npm install
 ```
 
 #### Frontend (Client)
 
-``` bash
+```bash
 cd ../client
-npm install
+yarn install
 ```
 
-------------------------------------------------------------------------
+#### Change The Server Ennpoint to Your LocalHost
+
+Go to the client -> Src -> network -> network.ts
+
+change the -> export const client = new Client("https://somnia-hockey.onrender.com/") to -> export const client = new Client("http://localhost:2567");
+
+---
 
 ### 3. Start the Backend Server
 
 From the `server/` directory:
 
-``` bash
+```bash
 npm start
 ```
 
-------------------------------------------------------------------------
+---
 
 ### 4. Start the Frontend Client
 
 From the `client/` directory:
 
-``` bash
+```bash
 npm run dev
 ```
 
-------------------------------------------------------------------------
+---
 
 ### 5. Launch the Game
 

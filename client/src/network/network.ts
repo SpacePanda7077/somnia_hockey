@@ -1,6 +1,6 @@
 import { Client, Room } from "colyseus.js";
 
-export const client = new Client("https://somnia-hockey.onrender.com/");
+export const client = new Client("https://somnia-hockey.onrender.com/"); // change to http://localhost:2567 if running locally
 export let current_room: Room;
 export let network_color = "#ff0000";
 
