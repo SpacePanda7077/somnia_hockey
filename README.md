@@ -76,6 +76,15 @@ This prototype was built for the **Somnia Hackathon**, delivering:
 
 ---
 
+---
+
+## Coming Soon ...
+
+- More maps to diverse game play
+- More Mode for more fun game play and replayability
+- Live prediction Matches("players who dont want to play can bet on live game that are in progress ... ")
+- and so mush more
+
 ## ⚙️ Setup & Installation
 
 Follow these steps to run **Somnia Hockey** locally:
